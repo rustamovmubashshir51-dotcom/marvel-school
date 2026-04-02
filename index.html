@@ -1575,7 +1575,7 @@
                             <td>Algebra</td>
                             <td>Geometry</td>
                             <td>Calculus</td>
-                            <td><span class="teacher-badge">Akmal Karimov</span></td>
+                            <td><span class="teacher-badge">Alisher</span></td>
                         </tr>
 
                     </tbody>
@@ -1623,7 +1623,7 @@
                         <i class="fas fa-user-tie"></i>
                     </div>
                     <div class="teacher-info">
-                        <h3 class="teacher-name">Akmal Karimov</h3>
+                        <h3 class="teacher-name">Alisher</h3>
                         <span class="teacher-subject">Mathematics Teachersi</span>
                         <div class="teacher-rating">
                             <i class="fas fa-star"></i>
@@ -1782,7 +1782,7 @@
         // FORM SUBMISSION
         document.getElementById('registrationForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             const formData = new FormData(this);
@@ -1805,14 +1805,14 @@
                 if (response.status == 200) {
                     submitBtn.innerHTML = '<i class="fas fa-check"></i> Muvaffaqiyatli!';
                     submitBtn.style.background = 'var(--success)';
-                    
+
                     const name = document.getElementsByName('name')[0].value;
                     const courseValue = document.getElementsByName('course')[0].value;
                     const courseNames = {
                         'English': 'English Language',
                         'Mathematics': 'Mathematics'
                     };
-                    
+
                     setTimeout(() => {
                         alert(`Rahmat, ${name}! Siz ${courseNames[courseValue] || 'tanlangan'} kursiga ro'yxatdan o'tdingiz.\nTez orada siz bilan bog'lanamiz.`);
                         this.reset();
