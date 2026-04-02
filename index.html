@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 
 <html data-theme="light" lang="uz">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" name="viewport"/>
-<title data-i18n-en="Marvel School - Professional Education Center" data-i18n-uz="Marvel School - Professional Ta'lim Markazi">Marvel School - Professional Ta'lim Markazi</title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" name="viewport" />
+    <title data-i18n-en="Marvel School - Professional Education Center"
+        data-i18n-uz="Marvel School - Professional Ta'lim Markazi">Marvel School - Professional Ta'lim Markazi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <style>
         /* === ROOT VARIABLES === */
         :root {
             --primary: #1a237e;
@@ -1316,396 +1319,482 @@
                 -webkit-overflow-scrolling: touch;
             }
         }
-    \n.lang-option:hover { background: rgba(26, 35, 126, 0.05); }\n</style>
-</head>
-<body>
-<!-- LOADER -->
-<div class="loader" id="loader">
-<div class="loader-logo">
-<i class="fas fa-graduation-cap"></i>
-</div>
-<div class="loader-text">Marvel School</div>
-</div>
-<!-- HEADER -->
-<header>
-<div class="container header-container">
-<a class="logo" href="#">
-<div class="logo-icon">
-<i class="fas fa-graduation-cap"></i>
-</div>
-<span>Marvel School</span>
-</a>
-<button class="mobile-menu-btn" id="mobileMenuBtn">
-<i class="fas fa-bars"></i>
-</button>
-<ul class="nav-links" id="navLinks">
-<li><a class="active" data-i18n-en="Home" data-i18n-uz="Bosh Sahifa" href="#home">Bosh Sahifa</a></li>
-<li><a data-i18n-en="Courses" data-i18n-uz="Kurslar" href="#courses">Kurslar</a></li>
-<li><a data-i18n-en="Features" data-i18n-uz="Afzalliklar" href="#features">Afzalliklar</a></li>
-<li><a data-i18n-en="Schedule" data-i18n-uz="Jadval" href="#schedule">Jadval</a></li>
-<li><a data-i18n-en="Teachers" data-i18n-uz="O'qituvchilar" href="#teachers">O'qituvchilar</a></li>
-<li><a data-i18n-en="Register" data-i18n-uz="Ro'yxat" href="#registration">Ro'yxat</a></li>
-</ul>
 
-<div class="lang-switcher" id="langSwitcher" style="position: relative; margin-left: 15px; display: flex; align-items: center; cursor: pointer; color: white; font-weight: 500; font-size: 0.95rem;">
-<span class="active-lang" style="display: flex; align-items: center; gap: 5px;">
-<img alt="UZ" id="activeLangImg" src="https://flagcdn.com/w20/uz.png" style="width: 20px; border-radius: 2px;"/>
-<span id="activeLangText">UZ</span>
-<i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
-</span>
-<div class="lang-dropdown" style="display: none; position: absolute; top: 100%; right: 0; background: var(--card); color: var(--text); border-radius: 8px; box-shadow: 0 4px 15px var(--shadow); overflow: hidden; margin-top: 10px; min-width: 100px; z-index: 1000;">
-<div class="lang-option" data-lang="uz" style="padding: 10px 15px; display: flex; align-items: center; gap: 8px; transition: background 0.2s;">
-<img alt="UZ" src="https://flagcdn.com/w20/uz.png" style="width: 20px; border-radius: 2px;"/> UZ
+        \n.lang-option:hover {
+            background: rgba(26, 35, 126, 0.05);
+        }
+
+        \n
+    </style>
+</head>
+
+<body>
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+        <div class="loader-logo">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="loader-text">Marvel School</div>
+    </div>
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <a class="logo" href="#">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span>Marvel School</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a class="active" data-i18n-en="Home" data-i18n-uz="Bosh Sahifa" href="#home">Bosh Sahifa</a></li>
+                <li><a data-i18n-en="Courses" data-i18n-uz="Kurslar" href="#courses">Kurslar</a></li>
+                <li><a data-i18n-en="Features" data-i18n-uz="Afzalliklar" href="#features">Afzalliklar</a></li>
+                <li><a data-i18n-en="Schedule" data-i18n-uz="Jadval" href="#schedule">Jadval</a></li>
+                <li><a data-i18n-en="Teachers" data-i18n-uz="O'qituvchilar" href="#teachers">O'qituvchilar</a></li>
+                <li><a data-i18n-en="Register" data-i18n-uz="Ro'yxat" href="#registration">Ro'yxat</a></li>
+            </ul>
+
+            <div class="lang-switcher" id="langSwitcher"
+                style="position: relative; margin-left: 15px; display: flex; align-items: center; cursor: pointer; color: white; font-weight: 500; font-size: 0.95rem;">
+                <span class="active-lang" style="display: flex; align-items: center; gap: 5px;">
+                    <img alt="UZ" id="activeLangImg" src="https://flagcdn.com/w20/uz.png"
+                        style="width: 20px; border-radius: 2px;" />
+                    <span id="activeLangText">UZ</span>
+                    <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                </span>
+                <div class="lang-dropdown"
+                    style="display: none; position: absolute; top: 100%; right: 0; background: var(--card); color: var(--text); border-radius: 8px; box-shadow: 0 4px 15px var(--shadow); overflow: hidden; margin-top: 10px; min-width: 100px; z-index: 1000;">
+                    <div class="lang-option" data-lang="uz"
+                        style="padding: 10px 15px; display: flex; align-items: center; gap: 8px; transition: background 0.2s;">
+                        <img alt="UZ" src="https://flagcdn.com/w20/uz.png" style="width: 20px; border-radius: 2px;" />
+                        UZ
+                    </div>
+                    <div class="lang-option" data-lang="en"
+                        style="padding: 10px 15px; display: flex; align-items: center; gap: 8px; transition: background 0.2s;">
+                        <img alt="EN" src="https://flagcdn.com/w20/gb.png" style="width: 20px; border-radius: 2px;" />
+                        EN
+                    </div>
+                </div>
             </div>
-<div class="lang-option" data-lang="en" style="padding: 10px 15px; display: flex; align-items: center; gap: 8px; transition: background 0.2s;">
-<img alt="EN" src="https://flagcdn.com/w20/gb.png" style="width: 20px; border-radius: 2px;"/> EN
-            </div>
-</div>
-</div>
-<button class="theme-toggle" id="themeToggle">
-<i class="fas fa-moon"></i>
-</button>
-</div>
-</header>
-<!-- HERO SECTION -->
-<section class="hero" id="home">
-<div class="container">
-<div class="hero-content">
-<h1 data-i18n-en="Modern Education with &lt;span&gt;Professional Teachers&lt;/span&gt;" data-i18n-uz="Professional &lt;span&gt;O'qituvchilar&lt;/span&gt; bilan Zamonaviy Ta'lim">Professional  bilan Zamonaviy Ta'lim</h1>
-<p>Marvel School - The most advanced education center in Uzbekistan. Learn English, Mathematics, and
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n-en="Modern Education with &lt;span&gt;Professional Teachers&lt;/span&gt;"
+                    data-i18n-uz="Professional &lt;span&gt;O'qituvchilar&lt;/span&gt; bilan Zamonaviy Ta'lim">
+                    Professional bilan Zamonaviy Ta'lim</h1>
+                <p>Marvel School - The most advanced education center in Uzbekistan. Learn English, Mathematics, and
                     Russian from professional teachers.</p>
-<div class="hero-btns">
-<a class="btn btn-primary" data-i18n-en='&lt;i class="fas fa-user-plus"&gt;&lt;/i&gt; Enroll in Course' data-i18n-uz='&lt;i class="fas fa-user-plus"&gt;&lt;/i&gt; Kursga Yozilish' href="#registration"><i class="fas fa-user-plus"></i></a>
-<a class="btn btn-secondary" data-i18n-en='&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt; Learn More' data-i18n-uz='&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt; Batafsil' href="#courses"><i class="fas fa-info-circle"></i></a>
-</div>
-</div>
-</div>
-</section>
-<!-- COURSES SECTION -->
-<section class="courses" id="courses">
-<div class="container">
-<h2 class="section-title" data-i18n-en="TOP &lt;span&gt;TRENDING&lt;/span&gt; COURSES" data-i18n-uz="1-AB &lt;span&gt;YUQORI BOLGAN&lt;/span&gt; YO'NALISHLAR">1-AB  YO'NALISHLAR</h2>
-<p class="section-subtitle" data-i18n-en="The most demanded courses and their prices" data-i18n-uz="Eng ko'p talab qilinadigan kurslar va ularning narxlari">Eng ko'p talab qilinadigan kurslar va ularning narxlari</p>
-<div class="courses-grid">
-<!-- KURS 1: English Language -->
-<div class="course-card">
-<div class="course-header">
-<div class="course-icon">
-<i class="fas fa-language"></i>
-</div>
-<h3 data-i18n-en="English Language" data-i18n-uz="Ingliz Tili">Ingliz Tili</h3>
-<div class="course-badge">IELTS 7.5+</div>
-</div>
-<div class="course-body">
-<p class="course-description">
+                <div class="hero-btns">
+                    <a class="btn btn-primary"
+                        data-i18n-en='&lt;i class="fas fa-user-plus"&gt;&lt;/i&gt; Enroll in Course'
+                        data-i18n-uz='&lt;i class="fas fa-user-plus"&gt;&lt;/i&gt; Kursga Yozilish'
+                        href="#registration"><i class="fas fa-user-plus"></i></a>
+                    <a class="btn btn-secondary"
+                        data-i18n-en='&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt; Learn More'
+                        data-i18n-uz='&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt; Batafsil' href="#courses"><i
+                            class="fas fa-info-circle"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COURSES SECTION -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title" data-i18n-en="TOP &lt;span&gt;TRENDING&lt;/span&gt; COURSES"
+                data-i18n-uz="1-AB &lt;span&gt;YUQORI BOLGAN&lt;/span&gt; YO'NALISHLAR">1-AB YO'NALISHLAR</h2>
+            <p class="section-subtitle" data-i18n-en="The most demanded courses and their prices"
+                data-i18n-uz="Eng ko'p talab qilinadigan kurslar va ularning narxlari">Eng ko'p talab qilinadigan
+                kurslar va ularning narxlari</p>
+            <div class="courses-grid">
+                <!-- KURS 1: English Language -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3 data-i18n-en="English Language" data-i18n-uz="Ingliz Tili">Ingliz Tili</h3>
+                        <div class="course-badge">IELTS 7.5+</div>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">
                             IELTS and General English levels. In-depth Speaking and Grammar. Practice with a Native
                             speaker.
                         </p>
-<ul class="course-features">
-<li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 3 times a week' data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Haftasiga 3 marta'><i class="fas fa-check-circle"></i></li>
-<li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 1.5 hours / lesson' data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 1.5 soat / dars'><i class="fas fa-check-circle"></i></li>
-<li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; With a Native speaker' data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Native speaker bilan'><i class="fas fa-check-circle"></i></li>
-<li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; IELTS 7.5+ guaranteed' data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; IELTS 7.5+ garant'><i class="fas fa-check-circle"></i></li>
-</ul>
-</div>
-<div class="course-footer">
-<div class="course-price">
-<span class="price-label" data-i18n-en="Monthly fee" data-i18n-uz="Oylik to'lov">Oylik to'lov</span>
-<span class="price-amount" data-i18n-en="500 000 &lt;small&gt;UZS&lt;/small&gt;" data-i18n-uz="500 000 &lt;small&gt;so'm&lt;/small&gt;">500 000 </span>
-</div>
-<a class="btn-course" data-i18n-en='Enroll in Course &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;' data-i18n-uz='Kursga yozilish &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;' href="#registration">Kursga yozilish </a>
-</div>
-</div>
-<!-- KURS 2: Mathematics -->
-<div class="course-card">
-<div class="course-header">
-<div class="course-icon">
-<i class="fas fa-square-root-alt"></i>
-</div>
-<h3 data-i18n-en="Mathematics" data-i18n-uz="Matematika">Matematika</h3>
-<div class="course-badge">DTM &amp; Xalqaro</div>
-</div>
-<div class="course-body">
-<p class="course-description">
+                        <ul class="course-features">
+                            <li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 3 times a week'
+                                data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Haftasiga 3 marta'><i
+                                    class="fas fa-check-circle"></i></li>
+                            <li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 1.5 hours / lesson'
+                                data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 1.5 soat / dars'><i
+                                    class="fas fa-check-circle"></i></li>
+                            <li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; With a Native speaker'
+                                data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Native speaker bilan'><i
+                                    class="fas fa-check-circle"></i></li>
+                            <li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; IELTS 7.5+ guaranteed'
+                                data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; IELTS 7.5+ garant'><i
+                                    class="fas fa-check-circle"></i></li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <span class="price-label" data-i18n-en="Monthly fee" data-i18n-uz="Oylik to'lov">Oylik
+                                to'lov</span>
+                            <span class="price-amount" data-i18n-en="500 000 &lt;small&gt;UZS&lt;/small&gt;"
+                                data-i18n-uz="500 000 &lt;small&gt;so'm&lt;/small&gt;">500 000 </span>
+                        </div>
+                        <a class="btn-course"
+                            data-i18n-en='Enroll in Course &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;'
+                            data-i18n-uz='Kursga yozilish &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;'
+                            href="#registration">Kursga yozilish </a>
+                    </div>
+                </div>
+                <!-- KURS 2: Mathematics -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-square-root-alt"></i>
+                        </div>
+                        <h3 data-i18n-en="Mathematics" data-i18n-uz="Matematika">Matematika</h3>
+                        <div class="course-badge">DTM &amp; Xalqaro</div>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">
                             Preparation for DTM and International universities. Development of logical thinking.
                             Problem-solving practice.
                         </p>
-<ul class="course-features">
-<li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 3 times a week' data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Haftasiga 3 marta'><i class="fas fa-check-circle"></i></li>
-<li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 1.5 hours / lesson' data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 1.5 soat / dars'><i class="fas fa-check-circle"></i></li>
-<li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Test analysis' data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Testlar tahlili'><i class="fas fa-check-circle"></i></li>
-<li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Individual approach' data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Individual yondashuv'><i class="fas fa-check-circle"></i></li>
-</ul>
-</div>
-<div class="course-footer">
-<div class="course-price">
-<span class="price-label" data-i18n-en="Monthly fee" data-i18n-uz="Oylik to'lov">Oylik to'lov</span>
-<span class="price-amount" data-i18n-en="500 000 &lt;small&gt;UZS&lt;/small&gt;" data-i18n-uz="500 000 &lt;small&gt;so'm&lt;/small&gt;">500 000 </span>
-</div>
-<a class="btn-course" data-i18n-en='Enroll in Course &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;' data-i18n-uz='Kursga yozilish &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;' href="#registration">Kursga yozilish </a>
-</div>
-</div>
-<!-- KURS 3: Russian Language -->
-<div class="course-card">
-<div class="course-header">
-<div class="course-icon">
-<i class="fas fa-book-open"></i>
-</div>
-<h3 data-i18n-en="Russian Language" data-i18n-uz="Rus Tili">Rus Tili</h3>
-<div class="course-badge">Conversational</div>
-</div>
-<div class="course-body">
-<p class="course-description">
+                        <ul class="course-features">
+                            <li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 3 times a week'
+                                data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Haftasiga 3 marta'><i
+                                    class="fas fa-check-circle"></i></li>
+                            <li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 1.5 hours / lesson'
+                                data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 1.5 soat / dars'><i
+                                    class="fas fa-check-circle"></i></li>
+                            <li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Test analysis'
+                                data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Testlar tahlili'><i
+                                    class="fas fa-check-circle"></i></li>
+                            <li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Individual approach'
+                                data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Individual yondashuv'><i
+                                    class="fas fa-check-circle"></i></li>
+                        </ul>
+                    </div>
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <span class="price-label" data-i18n-en="Monthly fee" data-i18n-uz="Oylik to'lov">Oylik
+                                to'lov</span>
+                            <span class="price-amount" data-i18n-en="500 000 &lt;small&gt;UZS&lt;/small&gt;"
+                                data-i18n-uz="500 000 &lt;small&gt;so'm&lt;/small&gt;">500 000 </span>
+                        </div>
+                        <a class="btn-course"
+                            data-i18n-en='Enroll in Course &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;'
+                            data-i18n-uz='Kursga yozilish &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;'
+                            href="#registration">Kursga yozilish </a>
+                    </div>
+                </div>
+                <!-- KURS 3: Russian Language -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3 data-i18n-en="Russian Language" data-i18n-uz="Rus Tili">Rus Tili</h3>
+                        <div class="course-badge">Conversational</div>
+                    </div>
+                    <div class="course-body">
+                        <p class="course-description">
                             Conversational va Grammar. Qisqa muddatda erkin muloqot qilishni o'rganing. Amaliy
                             mashg'ulotlar.
                         </p>
-<ul class="course-features">
-<li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 3 times a week' data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Haftasiga 3 marta'><i class="fas fa-check-circle"></i></li>
-<li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 1.5 hours / lesson' data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 1.5 soat / dars'><i class="fas fa-check-circle"></i></li>
-<li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Conversation practice' data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Suhbat amaliyoti'><i class="fas fa-check-circle"></i></li>
-<li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Movie and audio lessons' data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Kino va audio darslar'><i class="fas fa-check-circle"></i></li>
-</ul>
-</div>
-<div class="course-footer">
-<div class="course-price">
-<span class="price-label" data-i18n-en="Monthly fee" data-i18n-uz="Oylik to'lov">Oylik to'lov</span>
-<span class="price-amount" data-i18n-en="500 000 &lt;small&gt;UZS&lt;/small&gt;" data-i18n-uz="500 000 &lt;small&gt;so'm&lt;/small&gt;">500 000 </span>
-</div>
-<a class="btn-course" data-i18n-en='Enroll in Course &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;' data-i18n-uz='Kursga yozilish &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;' href="#registration">Kursga yozilish </a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- FEATURES SECTION -->
-<section class="features" id="features">
-<div class="container">
-<h2 class="section-title" data-i18n-en="Why &lt;span&gt;Choose Us?&lt;/span&gt;" data-i18n-uz="Nega &lt;span&gt;Bizni Tanlashadi?&lt;/span&gt;">Nega </h2>
-<p class="section-subtitle" data-i18n-en="Marvel School advantages and opportunities created for you" data-i18n-uz="Marvel School afzalliklari va siz uchun yaratilgan imkoniyatlar">Marvel School afzalliklari va siz uchun yaratilgan imkoniyatlar</p>
-<div class="features-grid">
-<div class="feature-card">
-<div class="feature-icon">
-<i class="fas fa-chalkboard-teacher"></i>
-</div>
-<h3 data-i18n-en="Professional Teachers" data-i18n-uz="Professional O'qituvchilar">Professional O'qituvchilar</h3>
-<p data-i18n-en="Certified teachers with 5+ years of experience. Every teacher is an expert in their field." data-i18n-uz="5+ yillik tajribaga ega sertifikatlangan o'qituvchilar. Har bir o'qituvchi o'z sohasining mutaxassisi.">5+ yillik tajribaga ega sertifikatlangan o'qituvchilar. Har bir o'qituvchi o'z sohasining mutaxassisi.</p>
-</div>
-<div class="feature-card">
-<div class="feature-icon">
-<i class="fas fa-laptop-code"></i>
-</div>
-<h3 data-i18n-en="Modern Classrooms" data-i18n-uz="Zamonaviy Darsxonalar">Zamonaviy Darsxonalar</h3>
-<p data-i18n-en="Classrooms equipped with smart boards, computers, and modern equipment." data-i18n-uz="Smart doskalar, kompyuterlar va zamonaviy uskunalar bilan jihozlangan darsxonalar.">Smart doskalar, kompyuterlar va zamonaviy uskunalar bilan jihozlangan darsxonalar.</p>
-</div>
-<div class="feature-card">
-<div class="feature-icon">
-<i class="fas fa-certificate"></i>
-</div>
-<h3 data-i18n-en="International Certificate" data-i18n-uz="Xalqaro Sertifikat">Xalqaro Sertifikat</h3>
-<p>Students who successfully complete the course will receive an internationally recognized
-                        certificate.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- SCHEDULE SECTION -->
-<section class="schedule" id="schedule">
-<div class="container">
-<h2 class="section-title">Dars <span>Schedulei</span></h2>
-<p class="section-subtitle" data-i18n-en="Weekly class schedule and teacher allocation" data-i18n-uz="Haftalik dars jadvali va o'qituvchilar taqsimoti">Haftalik dars jadvali va o'qituvchilar taqsimoti</p>
-<div class="table-wrapper">
-<table>
-<thead>
-<tr>
-<th data-i18n-en="Course" data-i18n-uz="Kurs">Kurs</th>
-<th data-i18n-en="Monday" data-i18n-uz="Dushanba">Dushanba</th>
-<th data-i18n-en="Wednesday" data-i18n-uz="Chorshanba">Chorshanba</th>
-<th data-i18n-en="Friday" data-i18n-uz="Juma">Juma</th>
-<th data-i18n-en="Teacher" data-i18n-uz="O'qituvchi">O'qituvchi</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong data-i18n-en="English Language" data-i18n-uz="Ingliz Tili">Ingliz Tili</strong></td>
-<td data-i18n-en="Grammar" data-i18n-uz="Grammatika">Grammatika</td>
-<td>Speaking</td>
-<td>Writing</td>
-<td><span class="teacher-badge">Shohruh</span></td>
-</tr>
-<tr>
-<td><strong data-i18n-en="Mathematics" data-i18n-uz="Matematika">Matematika</strong></td>
-<td>Algebra</td>
-<td>Geometry</td>
-<td>Calculus</td>
-<td><span class="teacher-badge">Akmal Karimov</span></td>
-</tr>
-<tr>
-<td><strong data-i18n-en="Russian Language" data-i18n-uz="Rus Tili">Rus Tili</strong></td>
-<td data-i18n-en="Cyrillic Alphabet" data-i18n-uz="Kirill Alifbosi">Kirill Alifbosi</td>
-<td data-i18n-en="Grammar" data-i18n-uz="Grammatika">Grammatika</td>
-<td data-i18n-en="Speech" data-i18n-uz="Nutq">Nutq</td>
-<td><span class="teacher-badge">Dmitriy Ivanov</span></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p class="schedule-note" data-i18n-en='&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt; All courses are 3 times a week, each lesson lasts 1.5 hours' data-i18n-uz='&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt; Barcha kurslar haftasiga 3 marta, har bir dars 1.5 soat davom etadi'><i class="fas fa-info-circle"></i></p>
-</div>
-</section>
-<!-- TEACHERS SECTION -->
-<section class="teachers" id="teachers">
-<div class="container">
-<h2 class="section-title" data-i18n-en="Our &lt;span&gt;Teachers&lt;/span&gt;" data-i18n-uz="Bizning &lt;span&gt;O'qituvchilar&lt;/span&gt;">Bizning </h2>
-<p class="section-subtitle" data-i18n-en="A team of professional and experienced teachers" data-i18n-uz="Professional va tajribali o'qituvchilar jamoasi">Professional va tajribali o'qituvchilar jamoasi</p>
-<div class="teachers-grid">
-<div class="teacher-card">
-<div class="teacher-img">
-<i class="fas fa-user-tie"></i>
-</div>
-<div class="teacher-info">
-<h3 class="teacher-name">Shohruh</h3>
-<span class="teacher-subject">English Language Teachersi</span>
-<div class="teacher-rating">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<span>5.0 (5 years experience)</span>
-</div>
-<p data-i18n-en="IELTS 8.5 holder. Over 5 years of experience. 200+ students successfully passed exams." data-i18n-uz="IELTS 8.5 sohibi. 5 yildan ortiq tajriba. 200+ talaba imtihonlarni muvaffaqiyatli topshirgan.">IELTS 8.5 sohibi. 5 yildan ortiq tajriba. 200+ talaba imtihonlarni muvaffaqiyatli topshirgan.</p>
-</div>
-</div>
-<div class="teacher-card">
-<div class="teacher-img">
-<i class="fas fa-user-tie"></i>
-</div>
-<div class="teacher-info">
-<h3 class="teacher-name">Akmal Karimov</h3>
-<span class="teacher-subject">Mathematics Teachersi</span>
-<div class="teacher-rating">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star-half-alt"></i>
-<span data-i18n-en="4.5 (4 years experience)" data-i18n-uz="4.5 (4 yillik tajriba)">4.5 (4 yillik tajriba)</span>
-</div>
-<p>Toshkent Davlat Universiteti bitiruvchisi. Mathematicsdan oliy toifali o'qituvchi.</p>
-</div>
-</div>
-<div class="teacher-card">
-<div class="teacher-img">
-<i class="fas fa-user-tie"></i>
-</div>
-<div class="teacher-info">
-<h3 class="teacher-name">Dmitriy Ivanov</h3>
-<span class="teacher-subject">Russian Language Teachersi</span>
-<div class="teacher-rating">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="far fa-star"></i>
-<span data-i18n-en="4.0 (3 years experience)" data-i18n-uz="4.0 (3 yillik tajriba)">4.0 (3 yillik tajriba)</span>
-</div>
-<p>Russian is his native language. Has been teaching Russian in the Republic of Uzbekistan for 3
-                            years.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- REGISTRATION SECTION -->
-<section class="registration" id="registration">
-<div class="container">
-<h2 class="section-title" style="color: white;">Coursega <span style="color: var(--accent);">Registerdan
-                    O'tish</span></h2>
-<p class="section-subtitle" data-i18n-en="Register now and get a 20% discount" data-i18n-uz="Hoziroq ro'yxatdan o'ting va 20% chegirmaga ega bo'ling" style="color: rgba(255,255,255,0.8);">Hoziroq ro'yxatdan o'ting va 20% chegirmaga ega bo'ling</p>
-<div class="form-container">
-<form id="registrationForm">
-<div class="form-group">
-<label data-i18n-en="Your Name *" data-i18n-uz="Ismingiz *" for="name">Ismingiz *</label>
-<input class="form-control" data-i18n-ph-en="Enter your full name" data-i18n-ph-uz="Ism familiyangizni kiriting" id="name" placeholder="Ism familiyangizni kiriting" required="" type="text"/>
-</div>
-<div class="form-group">
-<label data-i18n-en="Phone Number *" data-i18n-uz="Telefon Raqamingiz *" for="phone">Telefon Raqamingiz *</label>
-<input class="form-control" id="phone" placeholder="+998 (__) ___ __ __" required="" type="tel"/>
-</div>
-<div class="form-group">
-<label data-i18n-en="Email Address" data-i18n-uz="Email Manzilingiz" for="email">Email Manzilingiz</label>
-<input class="form-control" id="email" placeholder="example@email.com" type="email"/>
-</div>
-<div class="form-group">
-<label for="course">Tanlagan Courseingiz *</label>
-<select class="form-control" id="course" required="">
-<option value="">Courseni tanlang</option>
-<option value="english">English Language - 500 000 so'm/oy</option>
-<option value="math">Mathematics - 500 000 so'm/oy</option>
-<option value="russian">Russian Language - 500 000 so'm/oy</option>
-</select>
-</div>
-<div class="form-group">
-<label data-i18n-en="Additional Comments" data-i18n-uz="Qo'shimcha Izoh" for="message">Qo'shimcha Izoh</label>
-<textarea class="form-control" data-i18n-ph-en="Your questions or requirements..." data-i18n-ph-uz="Savollaringiz yoki talablaringiz..." id="message" placeholder="Savollaringiz yoki talablaringiz..."></textarea>
-</div>
-<div class="form-group">
-<label class="checkbox-label">
-<input required="" type="checkbox"/>
-                            I have read and agree to the <a href="#" style="color: var(--accent);">terms and
-                                conditions</a>
-</label>
-</div>
-<button class="btn btn-primary" style="width: 100%;" type="submit">
-<i class="fas fa-paper-plane"></i> Registerdan O'tish
-                    </button>
-</form>
-</div>
-</div>
-</section>
-<!-- FOOTER -->
-<footer>
-<div class="container">
-<div class="footer-content">
-<div>
-<div class="footer-logo">
-<i class="fas fa-graduation-cap"></i> Marvel School
+                        <ul class="course-features">
+                            <li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 3 times a week'
+                                data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Haftasiga 3 marta'><i
+                                    class="fas fa-check-circle"></i></li>
+                            <li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 1.5 hours / lesson'
+                                data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; 1.5 soat / dars'><i
+                                    class="fas fa-check-circle"></i></li>
+                            <li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Conversation practice'
+                                data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Suhbat amaliyoti'><i
+                                    class="fas fa-check-circle"></i></li>
+                            <li data-i18n-en='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Movie and audio lessons'
+                                data-i18n-uz='&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Kino va audio darslar'><i
+                                    class="fas fa-check-circle"></i></li>
+                        </ul>
                     </div>
-<p>The best professional education center in Uzbekistan. Over 5 years of experience, 1000+
+                    <div class="course-footer">
+                        <div class="course-price">
+                            <span class="price-label" data-i18n-en="Monthly fee" data-i18n-uz="Oylik to'lov">Oylik
+                                to'lov</span>
+                            <span class="price-amount" data-i18n-en="500 000 &lt;small&gt;UZS&lt;/small&gt;"
+                                data-i18n-uz="500 000 &lt;small&gt;so'm&lt;/small&gt;">500 000 </span>
+                        </div>
+                        <a class="btn-course"
+                            data-i18n-en='Enroll in Course &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;'
+                            data-i18n-uz='Kursga yozilish &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;'
+                            href="#registration">Kursga yozilish </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FEATURES SECTION -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title" data-i18n-en="Why &lt;span&gt;Choose Us?&lt;/span&gt;"
+                data-i18n-uz="Nega &lt;span&gt;Bizni Tanlashadi?&lt;/span&gt;">Nega </h2>
+            <p class="section-subtitle" data-i18n-en="Marvel School advantages and opportunities created for you"
+                data-i18n-uz="Marvel School afzalliklari va siz uchun yaratilgan imkoniyatlar">Marvel School
+                afzalliklari va siz uchun yaratilgan imkoniyatlar</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 data-i18n-en="Professional Teachers" data-i18n-uz="Professional O'qituvchilar">Professional
+                        O'qituvchilar</h3>
+                    <p data-i18n-en="Certified teachers with 5+ years of experience. Every teacher is an expert in their field."
+                        data-i18n-uz="5+ yillik tajribaga ega sertifikatlangan o'qituvchilar. Har bir o'qituvchi o'z sohasining mutaxassisi.">
+                        5+ yillik tajribaga ega sertifikatlangan o'qituvchilar. Har bir o'qituvchi o'z sohasining
+                        mutaxassisi.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 data-i18n-en="Modern Classrooms" data-i18n-uz="Zamonaviy Darsxonalar">Zamonaviy Darsxonalar</h3>
+                    <p data-i18n-en="Classrooms equipped with smart boards, computers, and modern equipment."
+                        data-i18n-uz="Smart doskalar, kompyuterlar va zamonaviy uskunalar bilan jihozlangan darsxonalar.">
+                        Smart doskalar, kompyuterlar va zamonaviy uskunalar bilan jihozlangan darsxonalar.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 data-i18n-en="International Certificate" data-i18n-uz="Xalqaro Sertifikat">Xalqaro Sertifikat
+                    </h3>
+                    <p>Students who successfully complete the course will receive an internationally recognized
+                        certificate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SCHEDULE SECTION -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <h2 class="section-title">Dars <span>Schedulei</span></h2>
+            <p class="section-subtitle" data-i18n-en="Weekly class schedule and teacher allocation"
+                data-i18n-uz="Haftalik dars jadvali va o'qituvchilar taqsimoti">Haftalik dars jadvali va o'qituvchilar
+                taqsimoti</p>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-i18n-en="Course" data-i18n-uz="Kurs">Kurs</th>
+                            <th data-i18n-en="Monday" data-i18n-uz="Dushanba">Dushanba</th>
+                            <th data-i18n-en="Wednesday" data-i18n-uz="Chorshanba">Chorshanba</th>
+                            <th data-i18n-en="Friday" data-i18n-uz="Juma">Juma</th>
+                            <th data-i18n-en="Teacher" data-i18n-uz="O'qituvchi">O'qituvchi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong data-i18n-en="English Language" data-i18n-uz="Ingliz Tili">Ingliz Tili</strong>
+                            </td>
+                            <td data-i18n-en="Grammar" data-i18n-uz="Grammatika">Grammatika</td>
+                            <td>Speaking</td>
+                            <td>Writing</td>
+                            <td><span class="teacher-badge">Shohruh</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong data-i18n-en="Mathematics" data-i18n-uz="Matematika">Matematika</strong></td>
+                            <td>Algebra</td>
+                            <td>Geometry</td>
+                            <td>Calculus</td>
+                            <td><span class="teacher-badge">Akmal Karimov</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong data-i18n-en="Russian Language" data-i18n-uz="Rus Tili">Rus Tili</strong></td>
+                            <td data-i18n-en="Cyrillic Alphabet" data-i18n-uz="Kirill Alifbosi">Kirill Alifbosi</td>
+                            <td data-i18n-en="Grammar" data-i18n-uz="Grammatika">Grammatika</td>
+                            <td data-i18n-en="Speech" data-i18n-uz="Nutq">Nutq</td>
+                            <td><span class="teacher-badge">Dmitriy Ivanov</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="schedule-note"
+                data-i18n-en='&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt; All courses are 3 times a week, each lesson lasts 1.5 hours'
+                data-i18n-uz='&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt; Barcha kurslar haftasiga 3 marta, har bir dars 1.5 soat davom etadi'>
+                <i class="fas fa-info-circle"></i>
+            </p>
+        </div>
+    </section>
+    <!-- TEACHERS SECTION -->
+    <section class="teachers" id="teachers">
+        <div class="container">
+            <h2 class="section-title" data-i18n-en="Our &lt;span&gt;Teachers&lt;/span&gt;"
+                data-i18n-uz="Bizning &lt;span&gt;O'qituvchilar&lt;/span&gt;">Bizning </h2>
+            <p class="section-subtitle" data-i18n-en="A team of professional and experienced teachers"
+                data-i18n-uz="Professional va tajribali o'qituvchilar jamoasi">Professional va tajribali o'qituvchilar
+                jamoasi</p>
+            <div class="teachers-grid">
+                <div class="teacher-card">
+                    <div class="teacher-img">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="teacher-info">
+                        <h3 class="teacher-name">Shohruh</h3>
+                        <span class="teacher-subject">English Language Teachersi</span>
+                        <div class="teacher-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0 (5 years experience)</span>
+                        </div>
+                        <p data-i18n-en="IELTS 8.5 holder. Over 5 years of experience. 200+ students successfully passed exams."
+                            data-i18n-uz="IELTS 8.5 sohibi. 5 yildan ortiq tajriba. 200+ talaba imtihonlarni muvaffaqiyatli topshirgan.">
+                            IELTS 8.5 sohibi. 5 yildan ortiq tajriba. 200+ talaba imtihonlarni muvaffaqiyatli
+                            topshirgan.</p>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-img">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="teacher-info">
+                        <h3 class="teacher-name">Akmal Karimov</h3>
+                        <span class="teacher-subject">Mathematics Teachersi</span>
+                        <div class="teacher-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span data-i18n-en="4.5 (4 years experience)" data-i18n-uz="4.5 (4 yillik tajriba)">4.5 (4
+                                yillik tajriba)</span>
+                        </div>
+                        <p>Toshkent Davlat Universiteti bitiruvchisi. Mathematicsdan oliy toifali o'qituvchi.</p>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-img">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="teacher-info">
+                        <h3 class="teacher-name">Dmitriy Ivanov</h3>
+                        <span class="teacher-subject">Russian Language Teachersi</span>
+                        <div class="teacher-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span data-i18n-en="4.0 (3 years experience)" data-i18n-uz="4.0 (3 yillik tajriba)">4.0 (3
+                                yillik tajriba)</span>
+                        </div>
+                        <p>Russian is his native language. Has been teaching Russian in the Republic of Uzbekistan for 3
+                            years.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- REGISTRATION SECTION -->
+    <section class="registration" id="registration">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Coursega <span style="color: var(--accent);">Registerdan
+                    O'tish</span></h2>
+            <p class="section-subtitle" data-i18n-en="Register now and get a 20% discount"
+                data-i18n-uz="Hoziroq ro'yxatdan o'ting va 20% chegirmaga ega bo'ling"
+                style="color: rgba(255,255,255,0.8);">Hoziroq ro'yxatdan o'ting va 20% chegirmaga ega bo'ling</p>
+            <div class="form-container">
+              <form action="https://api.web3forms.com/submit" method="POST" id="registrationForm">
+    <input type="hidden" name="access_key" value="ee310fb4-6ac1-41a2-9a0f-9b3403345d00">
+
+    <div class="form-group">
+        <label data-i18n-en="Full Name" data-i18n-uz="To'liq Ismingiz">To'liq Ismingiz</label>
+        <input class="form-control" name="name" required type="text" />
+    </div>
+    <div class="form-group">
+        <label data-i18n-en="Phone Number" data-i18n-uz="Telefon Raqamingiz">Telefon Raqamingiz</label>
+        <input class="form-control" name="phone" required type="tel" />
+    </div>
+    <div class="form-group">
+        <label data-i18n-en="Select Course" data-i18n-uz="Kursni Tanlang">Kursni Tanlang</label>
+        <select class="form-control" name="course" required>
+            <option value="English">English Language</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Russian">Russian Language</option>
+        </select>
+    </div>
+    <button class="btn btn-primary w-100" type="submit">
+        <i class="fas fa-paper-plane"></i> Ro'yxatdan o'tish
+    </button>
+</form>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i> Marvel School
+                    </div>
+                    <p>The best professional education center in Uzbekistan. Over 5 years of experience, 1000+
                         graduates, 20+ professional teachers.</p>
-<div class="social-links">
-<a href="#"><i class="fab fa-telegram"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-facebook"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-</div>
-</div>
-<div>
-<h3 data-i18n-en="Courses" data-i18n-uz="Kurslar" style="margin-bottom: 1rem; color: var(--accent); font-size: 1.2rem;">Kurslar</h3>
-<ul class="footer-links">
-<li><a data-i18n-en="English Language" data-i18n-uz="Ingliz Tili" href="#">Ingliz Tili</a></li>
-<li><a data-i18n-en="Mathematics" data-i18n-uz="Matematika" href="#">Matematika</a></li>
-<li><a data-i18n-en="Russian Language" data-i18n-uz="Rus Tili" href="#">Rus Tili</a></li>
-<li><a href="#">IELTS Prep</a></li>
-<li><a data-i18n-en="DTM Preparation" data-i18n-uz="DTM tayyorgarlik" href="#">DTM tayyorgarlik</a></li>
-</ul>
-</div>
-<div>
-<h3 data-i18n-en="Contact" data-i18n-uz="Aloqa" style="margin-bottom: 1rem; color: var(--accent); font-size: 1.2rem;">Aloqa</h3>
-<ul class="footer-links">
-<li data-i18n-en='&lt;i class="fas fa-map-marker-alt" style="margin-right: 8px;"&gt;&lt;/i&gt; Tashkent, Yunusabad' data-i18n-uz='&lt;i class="fas fa-map-marker-alt" style="margin-right: 8px;"&gt;&lt;/i&gt; Toshkent, Yunusobod'><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i></li>
-<li><i class="fas fa-phone" style="margin-right: 8px;"></i> +998 90 123 45 67</li>
-<li><i class="fas fa-envelope" style="margin-right: 8px;"></i> info@marvelschool.uz</li>
-<li data-i18n-en='&lt;i class="fas fa-clock" style="margin-right: 8px;"&gt;&lt;/i&gt; Mon-Fri: 9:00 - 21:00' data-i18n-uz='&lt;i class="fas fa-clock" style="margin-right: 8px;"&gt;&lt;/i&gt; Dush-Jum: 9:00 - 21:00'><i class="fas fa-clock" style="margin-right: 8px;"></i></li>
-</ul>
-</div>
-</div>
-<div class="footer-bottom">
-<p>© 2024 Marvel School. All rights reserved.</p>
-</div>
-</div>
-</footer>
-<script>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 data-i18n-en="Courses" data-i18n-uz="Kurslar"
+                        style="margin-bottom: 1rem; color: var(--accent); font-size: 1.2rem;">Kurslar</h3>
+                    <ul class="footer-links">
+                        <li><a data-i18n-en="English Language" data-i18n-uz="Ingliz Tili" href="#">Ingliz Tili</a></li>
+                        <li><a data-i18n-en="Mathematics" data-i18n-uz="Matematika" href="#">Matematika</a></li>
+                        <li><a data-i18n-en="Russian Language" data-i18n-uz="Rus Tili" href="#">Rus Tili</a></li>
+                        <li><a href="#">IELTS Prep</a></li>
+                        <li><a data-i18n-en="DTM Preparation" data-i18n-uz="DTM tayyorgarlik" href="#">DTM
+                                tayyorgarlik</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 data-i18n-en="Contact" data-i18n-uz="Aloqa"
+                        style="margin-bottom: 1rem; color: var(--accent); font-size: 1.2rem;">Aloqa</h3>
+                    <ul class="footer-links">
+                        <li data-i18n-en='&lt;i class="fas fa-map-marker-alt" style="margin-right: 8px;"&gt;&lt;/i&gt; Tashkent, Yunusabad'
+                            data-i18n-uz='&lt;i class="fas fa-map-marker-alt" style="margin-right: 8px;"&gt;&lt;/i&gt; Toshkent, Yunusobod'>
+                            <i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>
+                        </li>
+                        <li><i class="fas fa-phone" style="margin-right: 8px;"></i> +998 90 123 45 67</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 8px;"></i> info@marvelschool.uz</li>
+                        <li data-i18n-en='&lt;i class="fas fa-clock" style="margin-right: 8px;"&gt;&lt;/i&gt; Mon-Fri: 9:00 - 21:00'
+                            data-i18n-uz='&lt;i class="fas fa-clock" style="margin-right: 8px;"&gt;&lt;/i&gt; Dush-Jum: 9:00 - 21:00'>
+                            <i class="fas fa-clock" style="margin-right: 8px;"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Marvel School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
         // LOADER
         window.addEventListener('load', function () {
             setTimeout(() => {
@@ -1821,7 +1910,7 @@
         });
     </script>
 
-<script>
+    <script>
         // LANGUAGE SWITCHER
         const langSwitcher = document.getElementById('langSwitcher');
         const langDropdown = langSwitcher.querySelector('.lang-dropdown');
@@ -1837,7 +1926,7 @@
             localStorage.setItem('language', lang);
 
             // Update UI
-            if(lang === 'uz') {
+            if (lang === 'uz') {
                 activeLangImg.src = 'https://flagcdn.com/w20/uz.png';
                 activeLangText.innerText = 'UZ';
             } else {
